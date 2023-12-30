@@ -41,6 +41,8 @@ function zoneSelection(event) {
       </h3>
     </div>
   </div>`;
+  let linkHomepage = document.querySelector("#link_homepage");
+  linkHomepage.classList.remove("d-none");
 }
 
 let zoneSelectElement = document.querySelector("#zone_select");

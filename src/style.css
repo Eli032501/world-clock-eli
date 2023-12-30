@@ -6,6 +6,15 @@ p {
   margin: 0;
   padding: 0;
 }
+a {
+  color: #8b4eb7;
+  text-decoration: none;
+  font-size: 14px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 body {
   background: linear-gradient(135deg, #fdfcfb 0%, #e2b8ff 100%);
   background-attachment: fixed;
@@ -14,7 +23,7 @@ body {
 main {
   background-color: #fdfbfa;
   border-radius: 10px;
-  padding: 30px;
+  padding: 30px 30px 20px;
   margin: 44px auto;
   width: 550px;
   box-shadow: 3px 3px 8px #36313843;
@@ -40,15 +49,14 @@ h1 {
   border: #00000081 1.2px solid;
   border-radius: 4px;
   width: 100%;
-  margin: 20px 0px 18px;
+  margin: 18px 0px;
   padding: 5px 10px;
 }
 .zone-div {
-  padding: 20px 0px 14px;
+  padding: 22px 0px 10px;
   border-bottom: 1px dashed #0000002b;
 }
 .zone-div:last-child {
-  padding-bottom: 0;
   border-bottom: none;
 }
 h2 {
@@ -69,16 +77,9 @@ p.date {
   padding-bottom: 6px;
   font-size: 14px;
 }
+
 footer {
   text-align: center;
   font-size: 14px;
   font-weight: 400;
-}
-
-footer a {
-  color: #8b4eb7;
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
 }
