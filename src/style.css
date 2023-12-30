@@ -1,3 +1,12 @@
 body {
   background-color: aquamarine;
+  text-align: center;
+}
+main {
+  margin: 30px auto;
+  width: 800px;
+}
+
+footer {
+  text-align: center;
 }
