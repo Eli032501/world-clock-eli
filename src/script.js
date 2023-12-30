@@ -20,14 +20,13 @@ function updateTime() {
     );
   }
 }
-updateTime();
-setInterval(updateTime, 1000);
 
 function zoneSelection(event) {
   let selectedZone = event.target.value;
   let selectedZoneDisplay = selectedZone.replace("-", " ").split("/")[1];
   let selectedTimeZone = moment().tz(selectedZone);
   let zoneContainer = document.querySelector("#zones_container");
+  // adding a plus to increment 1 more zone under the previus ones - 'innerHTML += ...'
   zoneContainer.innerHTML = `<div class="zone-div row align-items-center">
     <div class="col text-start">
       <h2>${selectedZoneDisplay}</h2>
@@ -43,3 +42,6 @@ function zoneSelection(event) {
 
 let zoneSelectElement = document.querySelector("#zone_select");
 zoneSelectElement.addEventListener("change", zoneSelection);
+
+updateTime();
+setInterval(updateTime, 1000);
