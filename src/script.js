@@ -23,6 +23,9 @@ function updateTime() {
 
 function zoneSelection(event) {
   let selectedZone = event.target.value;
+  if (selectedZone === "current") {
+    selectedZone = moment.tz.guess();
+  }
   let selectedZoneDisplay = selectedZone.replace("-", " ").split("/")[1];
   let selectedTimeZone = moment().tz(selectedZone);
   let zoneContainer = document.querySelector("#zones_container");
