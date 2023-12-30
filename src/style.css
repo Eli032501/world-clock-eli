@@ -1,10 +1,15 @@
 body {
-  background-color: aquamarine;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-attachment: fixed;
   text-align: center;
+  font-family: "Nunito Sans", sans-serif;
 }
 main {
+  background-color: #fff8f6;
+  padding: 20px;
+  border-radius: 10px;
   margin: 30px auto;
-  width: 800px;
+  width: 650px;
 }
 
 footer {
